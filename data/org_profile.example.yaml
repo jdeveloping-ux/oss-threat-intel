@@ -1,0 +1,17 @@
+# Organization profile
+#
+# List the software, platforms, and vendor products this organization
+# runs. The filtering module matches new KEV entries against this list
+# to decide what's relevant enough to include in the digest.
+#
+# Keep names as they'd commonly appear in a KEV entry's "product" or
+# "vendorProject" field (e.g. "WordPress", not "our website CMS").
+# Matching is case insensitive.
+
+organization_name: "Example Org"
+
+products:
+  - "WordPress"
+  - "QuickBooks"
+  - "Microsoft 365"
+  - "Google Workspace"
