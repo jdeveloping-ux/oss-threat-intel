@@ -37,4 +37,4 @@ This project is part of a broader effort to make cyber threat visibility accessi
 
 ## License
 
-TBD (leaning toward a permissive open source license, MIT or Apache 2.0, to keep this genuinely accessible)
+License: MIT, see LICENSE
