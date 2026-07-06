@@ -2,6 +2,16 @@
 
 Status: Draft, v1 scope. This document will be updated as the project develops, changes should be committed with dated messages so the evolution of the design is visible in history.
 
+## Update, 2026-07-06: Triage logic revised
+
+Original scoring logic assumed a distinction between confirmed and
+unconfirmed exploited vulnerabilities. Since all entries reaching the
+triage stage already come from CISA's KEV catalog (which only lists
+confirmed exploited vulnerabilities), this distinction doesn't apply
+to the data actually available. Revised scoring uses match confidence
+(exact vs substring) and recency (dateAdded) instead. See src/triage.py
+for implementation.
+
 ## Goal for v1
 
 Prove the core loop end to end, on the smallest possible scope, before expanding: pull one real feed, score it, produce one plain language email digest. Everything after v1 (more feeds, better scoring, a dashboard) only matters once this loop works and has been tested against at least one real organization's environment or a realistic simulated one.
