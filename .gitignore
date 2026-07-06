@@ -2,3 +2,4 @@ data/org_profile.yaml
 data/last_seen_kev.json
 __pycache__/
 *.pyc
+.env
